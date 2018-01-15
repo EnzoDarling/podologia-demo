@@ -1,0 +1,195 @@
+/* Estilos Principales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8em;
+  line-height: 1.5; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 1em 0; }
+
+#Header {
+  min-height: 450px;
+  margin: 0;
+  color: #fff;
+  text-align: center; }
+  #Header .headerImg {
+    position: absolute;
+    background: linear-gradient(rgba(59, 134, 134, 0.6), rgba(59, 134, 134, 0.6)), url("/img/massage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1; }
+  #Header h1 {
+    padding-top: 160px;
+    padding-bottom: 0;
+    font-weight: 600;
+    text-align: center; }
+  #Header h3 {
+    padding: 10px;
+    padding-bottom: 0; }
+  #Header .content-wrap {
+    padding: 0 1.5em; }
+
+.Header-content {
+  margin: 0;
+  color: #fff;
+  padding-top: 100px;
+  font-weight: 600;
+  z-index: 1; }
+  .Header-content h1 {
+    font-weight: 600;
+    text-shadow: 2px 2px 3px #0B486B; }
+
+.navbar {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.BgHeader {
+  z-index: -1; }
+
+.BgHeader-overlay {
+  position: absolute;
+  background: #7ca5bb;
+  opacity: 0.85;
+  z-index: 1; }
+
+#main-contenido {
+  margin: 0;
+  padding: 0; }
+
+#Info-masajes {
+  background: #F6F6F6;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0; }
+
+.Info-contenido {
+  margin: 0;
+  padding: 0; }
+
+.Info-titulo {
+  margin: 0px;
+  padding: 0px; }
+
+.Info-texto {
+  padding: 50px 0px; }
+
+#Servicios {
+  display: flex;
+  background: #333333;
+  padding: 2em 1em 1em;
+  text-align: center; }
+  #Servicios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  #Servicios li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333; }
+  #Servicios .card-content {
+    padding: 1em; }
+
+.card-img1 {
+  background: url("/img/backmassage.jpg"); }
+
+.card-img2 {
+  background: url("/img/towell.jpg"); }
+
+.card-img3 {
+  background: url("/img/stonemassage.jpg"); }
+
+.card-img1, .card-img2, .card-img3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px; }
+
+#Servicios .card-title {
+  font-size: 1.4em; }
+
+#Personal .box {
+  color: #F6F6F6;
+  padding: 1.5em;
+  margin: 0; }
+  #Personal .box:first-child {
+    background: #45ADA8; }
+  #Personal .box:last-child {
+    background: #F6F6F6;
+    color: #333; }
+
+#main-footer {
+  padding: 2em;
+  background: #333333;
+  color: #F6F6F6;
+  text-align: center; }
+  #main-footer a {
+    text-decoration: none;
+    color: #45ADA8; }
+
+.FormWrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.form-wrapper {
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.formBtn {
+  float: right; }
+
+.mfView .mfBtns {
+  display: none; }
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr; }
+  #Info-masajes .Info-texto p {
+    padding-top: 0; }
+  .content-wrap, #Servicios ul {
+    grid-column: 2/4; }
+  .box, #main-footer div {
+    grid-column: span 2; }
+  #Servicios ul {
+    display: flex;
+    justify-content: space-around; }
+  #Servicios li {
+    width: 31%; }
+  .mfView .mfBtns {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .actionBotons {
+    display: none; }
+  .mfView .mfBtns {
+    display: inline-block;
+    border: 5px solid pink; }
+  .mfView th {
+    padding: 1px; }
+  .sticky {
+    position: fixed;
+    background: rgba(25, 28, 33, 0.5);
+    color: #F6f6f6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 5ms; } }

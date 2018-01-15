@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat")
+    link(rel="stylesheet", href="/css/style.css")    
+    title Podologia Symfony App Demo | Pacientes
+  body
+    nav.navbar.navbar-inverse
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="/") Podologia
+        #navbar.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href="pacientes.html") Pacientes
+            li
+              a(href="turnos.html") Turnos
+            li
+              a(href="fichas.html") Fichas Médicas
+        // /.nav-collapse
+    .FormWrapper
+      .row
+        .col-md-12
+          h2.page-header Fichas Médicas
+          table.table.table-striped
+            .input-group
+              input.form-control(type="text" placeholder="Buscar")
+              span.input-group-btn
+                button.btn.btn-primary(type="button") Buscar!
+            thead
+              tr
+                th Apellido
+                th Nombre
+                th Anticuagulado
+            tbody
+              tr
+                th(scope="row") Apellido
+                td Nombre
+                td Si/No
+                td.actionBotons
+                  a.btn.btn-success(href="/fichas/detalle/1")
+                    i.fa.fa-eye
+                  a.btn.btn-default(href="/fichas/editar/1")
+                    i.fa.fa-pencil
+                  a.btn.btn-danger(href="/fichas/eliminar/1")
+                    i.fa.fa-trash
+              tr.mfView
+                td.mfBtns
+                  a.btn.btn-success(href="/fichas/detalle/1")
+                    i.fa.fa-eye
+                td.mfBtns
+                  a.btn.btn-default(href="/fichas/editar/1")
+                    i.fa.fa-pencil
+                td.mfBtns
+                  a.btn.btn-danger(href="/fichas/eliminar/1")
+                    i.fa.fa-trash              
+          a.btn.btn-primary(href="/fichas/crear")
+            i.fa.fa-plus
+            |  Nueva Ficha
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
