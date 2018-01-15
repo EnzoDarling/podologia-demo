@@ -1,0 +1,1 @@
+$(document).ready(function(){$(window).scroll(function(){$(this).scrollTop()>50?$(".navbar").addClass("sticky").animate({top:0}):$(".navbar").removeClass("sticky")})});
