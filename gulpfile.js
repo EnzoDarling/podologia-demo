@@ -32,7 +32,7 @@ gulp.task('browserSync', () =>{
 gulp.task('views', () => {
 	gulp.src('src/*.pug')
 		.pipe(pug({
-			pretty: false
+			pretty: true
 		}))
 		.pipe(gulp.dest('dist/'))
 		.pipe(browser.reload({stream: true}));
